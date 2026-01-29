@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodiac Signs - Obsidian</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0d0d12;
+            color: #e0e0e6;
+        }
+
+        .container {
+            display: grid;
+            gap: 20px;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .header,
+        .aside,
+        .content,
+        .sidebar-right,
+        .footer {
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            border: 1px solid #2a2a35;
+        }
+
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #1a1a2e, #301934);
+            color: #bb86fc;
+            padding: 30px;
+        }
+
+        .header h1 {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(187, 134, 252, 0.3);
+        }
+
+        .aside {
+            padding: 25px;
+            text-align: center;
+            background-color: #16161e;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url("logoacq.png");
+        }
+
+        .aside h1 {
+            color: #bb86fc;
+            font-size: 1.8rem;
+        }
+
+        .aside p {
+            color: #9494b8;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #1c1c27;
+            line-height: 1.8;
+            background-image: url("contnent.png");
+        }
+
+        .content h1 {
+            color: #03dac6;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .sidebar-right {
+            padding: 25px;
+            text-align: center;
+            background-color: #16161e;
+            background-image: url("right.png");
+        }
+
+        .sidebar-right h3 {
+            color: #bb86fc;
+            border-bottom: 2px solid #301934;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .sidebar-right p {
+            padding: 8px;
+            margin: 4px 0;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.2s ease;
+            color: #a9a9b3;
+        }
+
+        .sidebar-right p:hover {
+            background-color: #301934;
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            background-color: #09090c;
+            color: #6272a4;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        .btn-con {
+            display: flex;
+            justify-content: end;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 12px 25px;
+            border-radius: 30px;
+            border: none;
+            background-color: #6200ee;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(98, 0, 238, 0.3);
+        }
+
+        button:hover {
+            background-color: #bb86fc;
+            color: #1a1a2e;
+            box-shadow: 0 6px 20px rgba(187, 134, 252, 0.4);
+            transform: translateY(-2px);
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #2a2a35;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                grid-template-columns: 1fr 2fr;
+            }
+
+            .header {
+                grid-column: 1 / 3;
+            }
+
+            .aside {
+                grid-column: 1 / 2;
+            }
+
+            .content {
+                grid-column: 2 / 3;
+            }
+
+            .sidebar-right {
+                grid-column: 1 / 3;
+            }
+
+            .footer {
+                grid-column: 1 / 3;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                grid-template-columns: 220px 1fr 220px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .header {
+                grid-column: 1 / 4;
+            }
+
+            .aside {
+                grid-column: 1 / 2;
+            }
+
+            .content {
+                grid-column: 2 / 3;
+            }
+
+            .sidebar-right {
+                grid-column: 3 / 4;
+            }
+
+            .footer {
+                grid-column: 1 / 4;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Zodiac Signs</h1>
+        </header>
+
+        <aside class="aside">
+            <h1>Aquarius</h1>
+            <p>Jan 20 – Feb 18</p>
+        </aside>
+
+        <main class="content">
+            <h1>Characteristics</h1>
+            <hr><br>
+            <p>Independent, innovative, and forward-thinking, Aquarius values individuality and original ideas. They are
+                natural humanitarians who care deeply about society and the future of the world. Although they may
+                appear emotionally distant, they connect through intellect, honesty, and shared ideals.</p>
+            <div class="btn-con">
+                <button>Next Sign →</button>
+            </div>
+        </main>
+
+        <div class="sidebar-right">
+            <h3>Others</h3>
+            <p>Aries</p>
+            <p>Taurus</p>
+            <p>Gemini</p>
+            <p>Cancer</p>
+            <p>Leo</p>
+            <p>Virgo</p>
+            <p>Libra</p>
+            <p>Scorpio</p>
+            <p>Sagittarius</p>
+            <p>Capricorn</p>
+            <p>Pisces</p>
+        </div>
+
+        <footer class="footer">
+            <p>Guided by the stars, shaped by your choices. @2026</p>
+        </footer>
+    </div>
+</body>
+
+</html>
